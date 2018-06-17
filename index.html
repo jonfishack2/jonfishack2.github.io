@@ -2,13 +2,21 @@
 <html>
 <head>
    <!-- Website Title -->
-    <title>Jon Fishback - Website</title>
     <meta charset="utf-8">
-    <h1>Jon Fishback</h1>
+
     <style>
+        * {
+            font-family: "Arial Black";
+        }
+
         body {   
-            background-color: rgb(47, 65, 105);
-            color: white;
+            background: url(https://lh3.googleusercontent.com/lf5enEPftEny47rnqqyiL8CTUPh2-VuybaNkH726qQrsBeTslgqiKL-qPH7MumHYsbBGOrSbTVslAHhLZX3owejitjZwFvqiPOcpMteyuHmbLSrZvymUI7qscYm1ssLWgV7-a7US3gZ8LBanVkqIQVjmFFvyOu8j_g3eGeaIgCYut7fnY759fsdCZf_T9Ao9fX14JKC4R5BhAqbOy2C_BJR_qv2YfxLgl6sIfCo2EnV8NupPHU7ILRZguvtkBv0DKAwjd_Ol9Y0p1JnykizAVuSAjPkNBcl0-zIsNXfyPYlPusnnvMhY7QechbYyHPtibR4sZLstR2R72FEeDE6nrPVsPtjFZJtbNUBCCQ0SXdJxAQ33Tfiug1rVZg0iRwvdzDPu8oBXdvWF8lfixTsOaVNBTKxM8sSz2AKVRjBx7A5ax_T_2EC0QWd6bNP4L0gRtzWmFRkxPAGSPLgJ0Ez01HWNxo-oWOcfoopNECtmKbEdmNasGTGhX4fZkf916hBsRD8MFaibQTIln4Lv_Y3Fx-BX6bNl5ZxPAUvwoHQUSE8puWL7qxDUR0cYuFCFWdVAcmxgCpfEark7p6_eKkhKMPS9LBAcL_tAzA04bZmlmipni3TFLJXtVK5cvny9tggxRN0ct_rYx6jPmCofKxOt10ccHCWdtWo=w1726-h1294-no) no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /*background-color: rgb(47, 65, 105);*/
+            /*color: white;*/
         }
         
         /* Style all font awesome icons */
@@ -23,10 +31,10 @@
         .images {
         
             bottom: 0px;
-            float: right;
+            float: left;
         }
 
-        /* Add a hover effect if you want */
+        /* hover effect */
         .fa:hover {
             opacity: 0.7;
         }
@@ -42,16 +50,82 @@
             background: #007bb5;
             color: white;
         }
+
+        /*HEADER STYLING --------------------------------------------------*/
+
+        /* Style the header with a grey background and some padding */
+        .header {
+          overflow: hidden;
+          background-color: grey;
+          padding: 20px 10px;
+        }
+
+        /* Style the header links */
+        .header a {
+          float: left;
+          color: white;
+          text-align: center;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 18px; 
+          line-height: 25px;
+          border-radius: 4px;
+        }
+
+        /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+        .header a.logo {
+          font-size: 35px;
+          font-weight: bold;
+        }
+
+        /* Change the background color on mouse-over */
+        .header a:hover {
+          background-color: #ddd;
+          color: black;
+        }
+
+        /* Style the active/current link*/
+        /*.header a.active {
+          background-color: black;
+          color: white;
+        }*/
+
+        /* Float the link section to the right */
+        .header-right {
+          float: right;
+        }
+
+        /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */ 
+        @media screen and (max-width: 500px) {
+          .header a {
+            float: none;
+            display: block;
+            text-align: left;
+          }
+          .header-right {
+            float: none;
+          }
+        }
     </style>
 </head>
 <body> 
-    <h2>Welcome to my website!</h2>
+    <!-- HEADER -->
+    <div class="header">
+        <a href="#default" class="logo">&emsp; Jon Fishback</a>
+        <div class="header-right">
+            <a class="active" href="#home">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+        </div>
+    </div>
+
+    <h2>Welcome to my Website!</h2>
     <p>Don't Hire Me</p>
 
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Add font awesome icons -->
+    <!-- Add awesome icons -->
     <p class="images">
         <a href="https://www.instagram.com/jonfishback/?hl=en" class="fa fa-instagram"></a>
         <a href="https://www.linkedin.com/in/jon-fishback-90280263/" class="fa fa-linkedin"></a>
