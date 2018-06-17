@@ -4,13 +4,42 @@
    <!-- Website Title -->
     <title>Jon Fishback - Website</title>
     <meta charset="utf-8">
-<h1>Jon Fishback</h1>
+    <h1>Jon Fishback</h1>
     <style>
         body {   
             background-color: rgb(47, 65, 105);
             color: white;
         }
-    .tabs {
+        
+        /* Style all font awesome icons */
+        .fa {
+            padding: 20px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .images {
+        
+            bottom: 0px;
+            float: right;
+        }
+
+        /* Add a hover effect if you want */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set color for each brand */
+        /* Instagram */
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+        /* Linkedin */
+        .fa-linkedin {
+            background: #007bb5;
             color: white;
         }
     </style>
@@ -18,5 +47,15 @@
 <body> 
     <h2>Welcome to my website!</h2>
     <p>Don't Hire Me</p>
+
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Add font awesome icons -->
+    <p class="images">
+        <a href="https://www.instagram.com/jonfishback/?hl=en" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com/in/jon-fishback-90280263/" class="fa fa-linkedin"></a>
+    <p>
+
 </body>
 </html>
